@@ -1,0 +1,36 @@
+<!-- Components -->
+<!-- Lesson Form -->
+<!-- NumberFieldGroup (for price input) -->
+
+
+  <!-- Create Lesson -->
+  <div class="create-lesson">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 m-auto">
+          <a href="/course-create" class="btn btn-light">
+            Go Back
+          </a>
+          <h1 class="display-4 text-center">Create A Lesson</h1>
+          <p class="lead text-center">Please provide lesson information</p>
+          <small class="d-block pb-3">* = required field</small>
+          <form action="/course">
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" placeholder="* Title" name="title" required />
+              <small class="form-text text-muted">Please provide a title</small>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control form-control-lg" placeholder="A description of your course" name="description"></textarea>
+              <small class="form-text text-muted">Please provide a detailed description</small>
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control form-control-lg" placeholder="* Video Url" name="video-url" required />
+              <small class="form-text text-muted">Please provide your lessons video url.</small>
+            </div> 
+            <input type="submit" class="btn btn-info btn-block mt-4" />
+            <!-- After this is submitted successfully I want to redirect back to create course page and display some lesson info back on the course form -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

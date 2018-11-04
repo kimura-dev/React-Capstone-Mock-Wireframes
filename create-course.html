@@ -1,0 +1,53 @@
+<!-- Components -->
+<!-- Course Form -->
+<!-- TextInputFields -->
+<!-- TextAreaInputFields -->
+<!-- TextAreaInputFields -->
+<!-- LessonInputFields -->
+
+
+
+  <!-- Create Course -->
+  <div class="create-course">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 m-auto">
+          <a href="dashboard.html" class="btn btn-light">
+            Go Back
+          </a>
+          <h1 class="display-4 text-center">Create Your Course</h1>
+          <p class="lead text-center">Please provide detailed information about your course</p>
+          <small class="d-block pb-3">* = required field</small>
+          <form action="/course">
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" placeholder="* Title" name="title" required />
+              <small class="form-text text-muted">Please provide a title</small>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control form-control-lg" placeholder="A description of your course" name="description"></textarea>
+              <small class="form-text text-muted">Please provide a detailed description</small>
+            </div>
+            <div class="form-group">
+              <input type="number" class="form-control form-control-lg" placeholder="* Price" name="price" required />
+              <small class="form-text text-muted">Please provide a price</small>
+            </div>
+            <div class="mb-3">
+              <button type="button" class="btn btn-light">Add Lesson Links</button>
+              <span class="text-muted">Optional</span>
+            </div>
+            <!-- When user clicks Add Lesson Links, I want it to display lesson-create.html. Then after the user submits the lesson I want the
+            page to redirect back to the course-create.html and now I want the lesson url to display. -->
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fab fa-twitter"></i>
+                </span>
+              </div>
+              <input type="text" class="form-control form-control-lg" placeholder="Video URL" name="url" hidden/>
+            </div>
+            <input type="submit" class="btn btn-info btn-block mt-4" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
